@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    word-break: break-all;
+  }
+:root{
+    --primaryPostAll: #f67f39;
+    --orange: #ec740d;
+    --grayPostAll: #ada8ad;
+    --successPostAll: #48BB78;
+    --bluePostAll: #4299E1;
+    --purple: #5243aa;
+    --teal: #00a3bf;
+    --cornflowerBlue: #253858;
+    --orangePostAll: #f67f39;
+    --redPostAll: #ea5e5e;
+    --grayDark: #040d21;
+}
+body{
+    margin: 0px;
+    background-color: var(--grayDark);
+}
+#mainContainer {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: var(--primaryPostAll); */
+}
+#welcomeHeading{
+    margin: 0px;
+    font-size: 20px;
+    padding: 20px;
+    padding-bottom: 0px;
+    color: white;
+}
+#welcomeTagline{
+    color: var(--primaryPostAll);
+    margin: 0px 20px;
+}
+#keyFeatureContainer{
+  padding: 10px 25px;
+  margin: 10px 10px;
+  position: relative;
+}
+#keyFeatureContainer::before{
+  content: '';
+  background: var(--primaryPostAll);
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0.2;
+}
+#featureNote{
+    color: var(--grayDark)
+}
+.feature{
+    margin-bottom: 10px;
+    font-size: 15px;
+    position: relative;
+    color: white;
+    border-bottom: 1px dashed var(--primaryPostAll);
+}
+.feature::before{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color:white;
+    left: -15px;
+    top: 10px;
+}
+.settingHeading{
+    color: white;
+    font-size: 15px;
+}
+.settingsConatiner{
+    margin: 0px 20px;
+}
+.settingItemsContainer {
+    padding: 30px 20px;
+    color: white;
+}
+  
+  .settingItem {
+    margin: 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .settingItemValue {
+    margin: 15px 0px;
+  }
+  
+  .activeColorPanel {
+    border: 1px solid white;
+  }
+  
+  .settingColorItem {
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+    cursor: pointer;
+  }
+  .flexPostAll {
+    display: flex;
+  }
+  #websiteText{
+    margin-top: 15px;
+    cursor: pointer;
+    background: var(--primaryPostAll);
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    margin-left: 22px;
+  }
+  #showPanelbt{
+    cursor: pointer;
+    border: 1px solid;
+    border-color: var(--primaryPostAll);
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    margin-left: 22px;
+  }
+  #convertTokenBt{
+    cursor: pointer;
+    border: 1px solid;
+    border-color: var(--primaryPostAll);
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    margin-left: 10px;
+  }
+  .wrap{
+    flex-wrap: wrap;
+  }

@@ -1,0 +1,1027 @@
+.mcontainer * {
+  box-sizing: border-box;
+  word-break: break-all;
+  font-family: 'Oswald', sans-serif;
+  line-height: 16px;
+}
+
+svg path,
+svg rect{
+  fill: var(--primaryPostAll)
+}
+.mcontainer input[type='radio'] {
+  margin: 0px 3px;
+}
+
+.mcontainer .switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 19px;
+}
+
+.mcontainer .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.mcontainer .slider {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.mcontainer .slider:before {
+  position: absolute;
+  content: "";
+  border-radius: 34px;
+  top: -3px;
+  height: 25px;
+  width: 25px;
+  left: 0px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.mcontainer input:checked+.slider {
+  background-color: var(--primaryPostAll);
+}
+
+.mcontainer input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.mcontainer input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.helpTextPostAll {
+  font-size: 15px;
+  color: var(--grayPostAll);
+  cursor: pointer;
+  margin: 5px 0px;
+}
+
+.hideItem{
+  display: none!important;
+}
+
+.linkPostAll {
+  color: var(--bluePostAll)
+}
+
+.flexGrow1PostAll {
+  flex-grow: 1;
+}
+
+.borderTopPostAll {
+  border-top: 1px solid;
+}
+
+.linkPostAll:hover {
+  text-decoration: underline;
+}
+
+.radioTextPostAll {
+  font-size: 15px;
+  /* color: var(--grayDark) */
+}
+
+.mcontainer button,
+.mcontainer input[type='submit'] {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 12px 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.mcontainer input[type='submit'] {
+  box-shadow: 0px 5px 20px -8px #48bb78;
+  transition: all 0.3s;
+}
+
+.mcontainer input[type='submit']:hover {
+  box-shadow: 0px 5px 20px -6px #48bb78;
+  background-color: var(--darkGreenPostAll);
+}
+
+.showPostAllPanel {
+  transition: right 0.6s ease 0s, transform 0.6s var(--transation-timing-primary) !important;
+  transform: scale(1);
+  right: 5px;
+}
+
+.displayNonePostAll {
+  display: none;
+}
+
+.primaryBtPostAll {
+  background-color: var(--bluePostAll);
+  margin: 10px 0px;
+  color: white;
+  flex-grow: 1;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  outline: none;
+  padding: 12px 10px;
+  border-radius: 10px !important;
+}
+
+.hidePostAllPanel {
+  transform: scale(0);
+  right: -100%;
+}
+.darkBg{
+  background-color: var(--grayDark)!important;
+}
+
+.centerPostAll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.createnewTokenBt{
+  font-size: 16px;
+  color: var(--bluePostAll);
+  margin-top: 16px;
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 9px;
+  cursor: pointer;
+}
+.createnewTokenBt:hover{
+  box-shadow: 0px 4px 14px -6px;
+}
+
+.rightPostAll {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.marginNormalPostAll {
+  margin: 5px
+}
+
+.mcontainer {
+  z-index: 2147483645;
+  transition: right 0.4s 0.2s, transform 0.6s 0s, top 0.3s;
+  top: var(--panelTopPositionPostAll);
+  position: fixed;
+  border-radius: 5px;
+  transform: scale(var(--panelScaleSizePostAll));
+  transform-origin: right;
+  /* border: 2px solid white; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 14px -5px black;
+  height: 550px;
+  width: 550px;
+  font-size: 20px;
+  background: var(--grayDark);
+  color: white;
+}
+
+.postAllGifOverview {
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+  background-size: contain!important;
+  background-repeat: no-repeat!important;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 20px 40px #0000003b;
+}
+
+.mcontainer:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(180deg, transparent 15%, black);
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.msear {
+  outline: none;
+  font-size: 15px;
+  min-height: 26px;
+  min-width: 300px;
+  margin: 16px 86px;
+  position: sticky;
+  top: 0px;
+  border: none;
+  border-bottom: 2px solid var(--primaryPostAll);
+  color: white;
+  background: transparent;
+  padding: 5px 19px 2px 18px;
+}
+
+.moptio {
+  padding: 6px;
+  width: 100%;
+  margin-right: 5px;
+}
+
+.fileTypeAvatar{
+  margin-right: 6px;
+}
+.fileCreatedAtPostAll {
+  color: var(--grayPostAll);
+  font-size: 12px;
+}
+
+.mcopy {
+  transition: opcity 0.3s;
+  top: 0px;
+  position: absolute;
+  right: 0px;
+  /* border: 1px solid var(--primaryPostAll); */
+  padding: 3px 7px;
+  color: white;
+  background-color: var(--primaryPostAll);
+  cursor: pointer;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.mcopy:active {
+  background: black;
+  color: white;
+}
+
+.loopt {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  background: #80808054;
+  flex-grow: 1;
+  padding: 80px 0px;
+  max-width: 500px;
+  border-radius: 5px;
+}
+.moreSearchBt{
+  cursor: pointer;
+  padding: 10px 0px!important;
+}
+
+.searchTypeContainer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: white;
+  position: sticky;
+  top: 10px;
+  z-index: 9;
+}
+
+.searchTypesOptions {
+  margin: 0px 10px;
+  cursor: pointer;
+  transition: var(--transation-timing-primary);
+}
+.searchTypesOptions:hover{
+  color: var(--primaryPostAll)
+}
+.videoIframeSm{
+  width: 400px;
+  height: 300px;
+  border: none;
+}
+
+.videoTitle{
+  font-size: 15px;
+  padding:2px 15px;
+  color: var(--grayDark)
+}
+
+.activeSearchOption {
+  border-bottom: 2px solid var(--primaryPostAll);
+  color: var(--primaryPostAll);
+}
+
+.hiddenTextSearch{
+  color: white;
+  padding: 15px;
+  font-size: 15px;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+}
+
+.gifSearchContainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gifSearchItem {
+  /* border: 1px solid white; */
+  border-radius: 5px;
+  position: relative;
+  background-position-x: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  flex-grow: 1;
+  transition: all 0.3s;
+  margin: 5px;
+  width: 45%;
+  height: 125px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.searchFileItem{
+  padding: 6px 5px;
+  position: relative;
+}
+.itemCopyBtContainer{
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateY(-50%);
+}
+.searchFileItem:hover .itemCopyBtContainer{
+  right: 5px;
+  opacity: 1;
+}
+.itemCopyBtContainer>.copyTokenBt{
+  background-color: var(--primaryPostAll);
+}
+
+.fileSearchTitle{
+  font-size: 15px;
+  color: white;
+}
+.fileSearchSeeders{
+  color: var(--successPostAll);
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+.searchFileSize{
+  color: white;
+  font-size: 12px;
+  min-width: 50px;
+}
+.fileDetailsRight{
+  margin-left: 6px;
+}
+.searchFileDetails{
+  flex-grow: 1;
+  word-break: break-all;
+}
+.searchFileIcon{
+  width: 20px;
+  height: 20px;
+}
+.errormsg{
+  margin-left: 5px;
+}
+#postAllInnerContent {
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primaryPostAll);
+  border-radius: 5px;
+}
+
+.postAllLoader {
+  width: 40px;
+  height: 40px;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: auto;
+}
+
+#postAllLoaderContainter {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background-color: #040202a8;
+}
+#errorConatianer{
+  position: fixed;
+  right: 8px;
+  top: 10px;
+  padding: 0px 10px;
+  z-index: 99;
+}
+.error{
+  padding: 6px;
+  font-size: 12px;
+  background: #E53E3E;
+  border-radius: 5px;
+  width: 205px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.error > div {
+  align-items: center;
+}
+.postAllLoaderBottom {
+  bottom: 0px;
+}
+
+.postAllLoaderPage {
+  height: 100%;
+  top: 0px;
+}
+.postAllLoaderPage > div {
+  height: 100%;
+}
+
+/* nav bar*/
+
+.showNavPostAll {
+  left: 0px !important;
+}
+
+#navBarMenuButtonPostAll {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  cursor: pointer;
+}
+
+#navOverlayPostAll {
+  position: absolute;
+  top: 0px;
+  left: -100%;
+  width: 100%;
+  bottom: 0px;
+  z-index: 99;
+  transition: left 0.5s;
+}
+
+#navBarItemContainerPostAll {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  padding: 0px 20px;
+  padding-left: 40px;
+  width: 250px;
+  font-size: 20px;
+  height: 100%;
+  background: hsl(221deg 78% 7% / 81%);
+  color: white;
+  z-index: 100;
+}
+
+.spacer {
+  padding: 10px 0px;
+}
+
+#navBarItemContainerPostAll>.navCrossPostAll {
+  text-align: right;
+  position: absolute;
+  left: 235px;
+  top: 40%;
+  top: 40%;
+  transition: all 1.3s;
+  cursor: pointer;
+  padding: 0px;
+  padding: 15px 0px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navCrossPostAll:hover {
+  transform: rotateZ(360deg);
+}
+
+#navBarContainerPostAll {
+  color: white;
+}
+
+#userNameNavPostAll {
+  padding: 20px 0px;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 200px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 20px;
+  min-height: 45px;
+  color: var(--primaryPostAll);
+  z-index: 100;
+}
+
+.navBarItemPostAll {
+  padding: 15px 0px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+}
+.navBarItemPostAll::before{
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  width: 0px;
+  display: inline-block;
+  height: 2px;
+  border-radius: 5px;
+  transition: all 0.3s;
+  background-color: var(--primaryPostAll);
+}
+
+.navBarItemPostAll:hover{
+  color: var(--primaryPostAll);
+  /* width: 75%; */
+}
+
+/*MyList*/
+.avatar {
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  font-size: 12px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--primaryPostAll);
+  color: white;
+  font-weight: bold;
+}
+.avatar-sm {
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  font-size: 10px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--primaryPostAll);
+  color: var(--grayDark);
+  font-weight: bold;
+}
+
+#myListHeadingPostAll {
+  color: white;
+  margin: 25px 5px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--primaryPostAll);
+  padding-bottom: 23px;
+  margin-bottom: 0px;
+}
+
+.tokenLinkContainer {
+  z-index: 2;
+  position: absolute;
+  bottom: 10px;
+  transform: translateX(-50%);
+  left: 50%;
+  padding: 4px 25px;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0px 0px 20px -2px #ffffff94;
+}
+
+.TokenFileValue {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  flex-direction: column;
+  border: 1px solid var(--grayDark);
+  background-color: var(--grayDark);
+}
+
+.TokenValueSizeText {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.tokenOverviewValue {
+  height: fit-content;
+}
+
+.tokenImageValueContainer {
+  position: relative;
+  height: 230px;
+}
+
+.tokenImageValue {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid var(--grayDark);
+}
+
+.tokenPostallTextValue {
+  color: black !important;
+}
+
+.searchResultBt{
+  margin-left: 5px;
+  padding: 4px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  height: fit-content;
+  cursor: pointer;
+  display: flex;
+}
+
+.searchPlayBt{
+  background-color: var(--primaryPostAll);
+  color: white;
+  min-width: 75px;
+  padding: 5px 12px;
+}
+.searchDownloadBt{
+  border: 1px solid var(--primaryPostAll);
+  color: var(--primaryPostAll);
+}
+.searchDownloadBtImage{
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.filesIconPostAll {
+  min-width: 35px;
+  min-height: 55px;
+  max-width: 35px;
+  max-height: 55px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.streamTorrentFrame{
+  height: 300px;
+  width: 400px;
+  background-color: var(--grayDark);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.fileDescOverview{
+  font-size: 12px;
+  margin: 5px 20px;
+  color: var(--grayPostAll)
+}
+.streamTorrentFrame > .playIconBt{
+  width: 30px;
+  height: 30px;
+}
+.fileSearchOptionsContainer{
+  margin: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyTokenBt{
+  display: flex;
+  font-size: 12px;
+  background: var(--grayDark);
+  padding: 5px;
+  height: fit-content;
+  color: white;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+.imageMarginRight{
+  margin-right: 5px;
+}
+.emptyIcon{
+  width: 300px;
+  content: var(--emptyImage);
+}
+.fileIconPostAll {
+  content: var(--fileIconPostAll);
+}
+.playIconBt{
+  content: var(--iconPlayPostAll);
+}
+
+.videoIcon{
+  content: var(--iconVideoPostAll);
+}
+.audioIcon{
+  content: var(--iconAudioPostAll);
+}
+.imageIcon{
+  content: var(--iconImagePostAll);
+}
+.textIcon{
+  content: var(--iconTextPostAll);
+}
+.downloadIcon{
+  content: var(--downloadImagePostAll);
+}
+
+.googleIcon {
+  cursor: pointer;
+  min-width: 45px;
+  min-height: 45px;
+  max-width: 45px;
+  max-height: 45px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.3s var(--transation-timing-secondary);
+  content: var(--iconGoggle);
+}
+.iconError{
+  content: var(--iconError);
+}
+.closeIcon{
+  content: var(--closeIcon);
+  cursor: pointer;
+}
+.iconExclamation{
+  content: var(--iconExclamation);
+}
+.iconUpload{
+  content: var(--iconUpload);
+}
+.linkIcon {
+  cursor: pointer;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  object-fit: cover;
+  content: var(--iconLink);
+}
+.copyIcon {
+  cursor: pointer;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  object-fit: cover;
+  content: var(--iconCopy);
+}
+
+
+.filesImageContainer {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.createdDate{
+  font-size: 12px;
+  color: var(--grayPostAll);
+}
+#myListItemsPostAll {
+  margin: 10px 0px;
+  margin-left: 5px;
+  color: white;
+}
+
+.oneMyListItemPostAll {
+  padding: 5px 0px;
+  align-items: center;
+  border-left: 5px solid;
+  border-color: transparent;
+  position: relative;
+}
+.oneMyListItemPostAll:hover>.itemCopyBtContainer{
+  right: 5px;
+  opacity: 1;
+}
+
+.oneMyListItemPostAll:hover {
+  /* transform: scale(1.02); */
+  transition: all 0.3s;
+  padding-left: 5px;
+  border-color: var(--primaryPostAll)!important;
+  background-color: var(--primaryLight);
+}
+
+.textWrapPostAll {
+  word-break: keep-all;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.listItemTextPostAll {
+  flex-grow: 1;
+}
+#greetingText{
+  word-break: keep-all;
+  margin-right: 5px;
+}
+.fileTypePostAll {
+  color: var(--grayPostAll);
+}
+
+.flexPostAll {
+  display: flex;
+}
+
+.fileTypePostAll {
+  font-size: 15px;
+}
+
+/*login*/
+.googleLoginContainer {
+  border: 1px solid;
+  border-color: var(--primaryPostAll);
+  border-radius: 50px;
+  padding-right: 10px;
+}
+
+.copyTokenText{
+  font-size: 12px; 
+  margin-right: 4px;
+}
+
+.googleLoginContainer:hover .googleIcon {
+  background-color: white;
+}
+
+.loginFormContainerPostAll {
+  min-height: 450px;
+  color: white;
+}
+
+.formHeaderPostAll {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.formContainerPostAll {
+  margin-top: 15px;
+}
+
+.inputPostAll {
+  border: none;
+  min-width: 220px;
+  background: var(--primaryLight);
+  color: white;
+  outline: none;
+  padding: 0.5rem;
+  position: relative;
+  font-size: 15px;
+  width: 100%;
+}
+
+.loginBtPostAll {
+  background-color: var(--successPostAll);
+  margin: 10px 0px;
+  color: white;
+  flex-grow: 1;
+}
+
+.inputTextContainerPostAll {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.inputTextContainerPostAll::before {
+  content: '';
+  width: 1px;
+  background: var(--primaryPostAll);
+  position: absolute;
+  left: 0px;
+  min-height: 31px;
+  height: 95%;
+  top: 0px;
+  display: block;
+  transition: width 0.3s;
+}
+
+.inputTextContainerPostAll:focus-within::before {
+  width: 100%;
+}
+
+
+/*create token*/
+.hiddenRequireFile {
+  opacity: 0;
+  height: 1px;
+  width: 1px;
+}
+
+.createButton {
+  max-width: 130px;
+  border-radius: 50px;
+}
+
+#createTokenContainerPostAll {
+  color: white;
+  padding: 65px 15px;
+}
+
+.inputContainerPostAll {
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
+.fileListItemTitle {
+  max-width: 400px;
+  font-size: 16px;
+}
+
+.fileItemEditPostAll {
+  margin: 0px 5px;
+  color: var(--orangePostAll);
+  cursor: pointer;
+}
+
+.fileItemDeletePostAll {
+  color: var(--redPostAll);
+  cursor: pointer;
+}
+
+.itemOverviewInput {
+  /* color: black; */
+}
+
+.overviewContainerPostAll {
+  margin: 10px;
+}
+
+/* settings*/
+.settingItemsContainer {
+  padding: 30px 20px;
+  color: white;
+}
+
+.settingItem {
+  margin: 10px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settingItemValue {
+  margin: 15px 0px;
+}
+
+.activeColorPanel {
+  border: 1px solid white;
+}
+
+.settingColorItem {
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  margin: 0px 5px;
+  cursor: pointer;
+}

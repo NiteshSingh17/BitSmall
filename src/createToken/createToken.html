@@ -1,0 +1,69 @@
+<div id="createTokenContainerPostAll">
+    <div class="formHeaderPostAll">Create New Token</div>
+    <div class="formContainerPostAll">
+        <form name="createTokenPostaAll">
+            <div class="inputContainerPostAll">
+                <div class="helpTextPostAll">
+                    title for token to identify it
+                </div>
+                <div class="inputTextContainerPostAll">
+                    <input type="text" class="inputPostAll" name="title" placeholder="title" required/>
+                </div>
+            </div>
+            <div class="inputContainerPostAll">
+                <div class="helpTextPostAll">
+                    short description about token
+                </div>
+                <div class="inputTextContainerPostAll">
+                    <textarea rows="10" class="inputPostAll" name="description" placeholder="description" required></textarea>
+                </div>
+            </div>
+            <div class="inputContainerPostAll">
+                <div class="helpTextPostAll">
+                    type of token to represent it data
+                </div>
+                <div>
+                    <div class="flexPostAll">
+                        <div class="centerPostAll marginNormalPostAll">
+                            <input type="radio" value="image" name="typePostAll" required>
+                            <label for="typePostAll" class="radioTextPostAll">IMAGE</label>
+                            </input>
+                        </div>
+
+                        <div class="centerPostAll marginNormalPostAll">
+                            <input type="radio" value="file" name="typePostAll" required/>
+                            <div class="radioTextPostAll">FILE</div>
+                        </div>
+
+                        <div class="centerPostAll marginNormalPostAll">
+                            <input type="radio" value="text" name="typePostAll" required/>
+                            <div class="radioTextPostAll">TEXT</div>
+                        </div>
+
+                        <div class="centerPostAll marginNormalPostAll">
+                            <input type="radio" value="video" name="typePostAll" class="radioTextPostAll" required/>
+                            <div class="radioTextPostAll">VIDEO</div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div style="margin-top: 15px;">
+                    <div class="flexPostAll">
+                        <div class="filesIconPostAll fileIconPostAll">
+                        </div>
+                        <div>
+                            some some some some some some some some some some some some some some some some some some
+                            some some some some some some some some some some some some some
+                        </div>
+                    </div>
+                </div> -->
+                <div id="uploadFileBtPostAllContainer">
+
+                </div>
+                <div class="centerPostAll" style="margin-top: 10px;">
+                    <input type="submit" class="loginBtPostAll createButton" value="Create" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

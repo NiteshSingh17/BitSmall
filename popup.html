@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <link href="popup.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="mainContainer">
+    <div>
+      <h1 id="welcomeHeading">BitSmall</h1>
+      <div id="welcomeTagline">place for everything</div>
+      <div class="settingsConatiner">
+        <div class="settingItem flexPostAll">
+          <div class="settingHeading" style="justify-content: space-between">
+            Color Scheme
+          </div>
+          <div class="settingItemValue flexPostAll">
+            <div class="settingColorItem" value="orange" style="background-color:var(--orange)"></div>
+            <div class="settingColorItem" value="successPostAll" style="background-color:var(--successPostAll)"></div>
+            <div class="settingColorItem" value="bluePostAll" style="background-color:var(--bluePostAll)"></div>
+            <div class="settingColorItem" value="purple" style="background-color:var(--purple)"></div>
+            <div class="settingColorItem" value="teal" style="background-color:var(--teal)"></div>
+            <div class="settingColorItem" value="cornflowerBlue" style="background-color:var(--cornflowerBlue)"></div>
+            <div class="settingColorItem" value="redPostAll" style="background-color:var(--redPostAll)"></div>
+          </div>
+        </div>
+        <div class="settingItem flexPostAll">
+          <div class="settingHeading" style="justify-content: space-between">
+            Panel Size
+          </div>
+          <div>
+            <input type="number" step="0.1" min="0.5" max="2" id="panelSize" class='inputPostAll'
+              placeholder="Size in aspect" />
+          </div>
+        </div>
+        <div class="settingItem flexPostAll">
+          <div class="settingHeading" style="justify-content: space-between">
+            Auto check
+          </div>
+          <div>
+            <label class="switch">
+              <input id="autoCheckPage" type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flexPostAll wrap">
+        <div id="showPanelbt">Show/hide panel(;+;)</div>
+        <div id="convertTokenBt">Convert tokens(q+q)</div>
+        <div id="websiteText">More info</div>
+    </div>
+    <div id="keyFeatureContainer">
+      <div class="feature">press ;+; on websites to open panel</div>
+          <div class="feature">press q+q to convert tokens to representive values</div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

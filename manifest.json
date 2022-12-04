@@ -1,0 +1,88 @@
+{
+  "manifest_version": 3,
+  "name": "BitSmall: share gifs, and videos easily",
+  "description": "BitSmall allows you to send gifs, images, videos and files from Gmail to youtube",
+  "version": "1.0.2",
+  "author": "Nitesh Singh",
+  "action": {
+    "default_title": "BitSmall",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "favicon16.png",
+      "32": "favicon32.png"
+    }
+  },
+  "icons": {
+    "16": "favicon16.png",
+    "32": "favicon32.png",
+    "48": "favicon48.ico",
+    "128": "favicon128.png"
+  },
+  "permissions": [
+    "webRequest",
+    "alarms",
+    "system.display",
+    "storage"
+  ],
+  "host_permissions": ["*://*/*"],
+  "externally_connectable": {
+    "matches": ["https://apibitsmall.cyclic.app/*"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": [
+        "content_script.js",
+        "/src/nav/navbar.css.js"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["*://*/*"],
+      "js": [
+        "/src/nav/navbar.js",
+        "/src/search/search.js",
+        "/src/login/login.js",
+        "/src/signup/signup.js",
+        "/src/createToken/createToken.js",
+        "/src/myList/myList.js",
+        "/src/setting/setting.js"
+      ],
+      "run_at": "document_end"
+    },{
+      "matches": [
+        "http://*/s/d/*",
+        "https://webtor.io/show*&mode=download"
+      ],
+      "all_frames": true,
+      "js": [
+        "/src/downloadTorrent/download.js"
+      ],
+      "run_at": "document_end"
+    }
+
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "/images/*"
+      ],
+      "matches": ["*://*/*"]
+    },
+    {
+      "resources": [
+        "/css.css"
+      ],
+      "matches": ["*://*/*"]
+    },
+    {
+      "resources": [
+        "/src/*"
+      ],
+      "matches": ["*://*/*"]
+    }
+  ]
+}
