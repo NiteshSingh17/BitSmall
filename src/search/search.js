@@ -6,7 +6,7 @@
   let postAllPanelRef = null;
   let moreBt = null;
   this.curSearchType = 'gif';
-  this.apiUrl = 'https://apibitsmall.cyclic.app/';
+  this.apiUrl = 'https://bitsmallapi.onrender.com/';
   this.hideOverviewPanelTimeout;
 
   const handleChromeRequest = (...props) => {

@@ -5,7 +5,7 @@
   this.defaultSettings = {};
   this.typekey = ['', ''];
   this.isCheckingPageTokens = false;
-  this.apiHostUrl = 'https://apibitsmall.cyclic.app/'
+  this.apiHostUrl = 'https://bitsmallapi.onrender.com/'
   setPostAllPanelReference = (ref) => {
     this.postAllPanelRef = ref;
   }

@@ -8,7 +8,7 @@
     this.typingTimer = {};
     this.settings = { primaryColor: 'orange', primaryColorCode: 'ec740d', panelSize: 1.2, lastActiveTab: 'search', autoCheck: false }
     this.userInfo;
-    this.apiBaseUrl = "https://apibitsmall.cyclic.app/";
+    this.apiBaseUrl = "https://bitsmallapi.onrender.com/";
     this.COLORS = {
       orange: 'ec740d',
       successPostAll: '48BB78',
