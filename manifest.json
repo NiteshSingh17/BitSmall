@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "BitSmall: share gifs, and videos easily",
   "description": "BitSmall allows you to send gifs, images, videos and files from Gmail to youtube",
-  "version": "1.0.3",
+  "version": "1.0.31",
   "author": "Nitesh Singh",
   "action": {
     "default_title": "BitSmall",
